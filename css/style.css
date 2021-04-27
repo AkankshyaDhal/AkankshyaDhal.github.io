@@ -32,6 +32,11 @@ header{
     padding:0 15px;
     margin: 0 auto;
 }
+@media(min-width: 568px){
+    .container{
+        max-width:320px;;
+    }
+}
 
 @media(min-width: 576px){
     .container{
@@ -398,5 +403,27 @@ section.contact .social{
       margin-left:6rem;
      }
    
+ @media(max-width: 568px){
+    .pinky{
+        flex-direction:column;
+    }
+    header{
+      clip-path:polygon(0 0,100% 0,100% 100%,70% 97%,0 100%);
+  }
+  .pinky .left img{
+      width: 350px;
+  }
+  .pinky .right{
+   position:absolute;
+   top:250px;
+   padding: 0 2rem;
+   background:linear-gradient(0,0,0,0,), rgba(0,0,0,0.9);
+  }
+  .pinky .left{
+      margin-top:2rem;
+      margin-right: -12rem;
+      padding-bottom: 5rem;
+  }
+
 
   }
