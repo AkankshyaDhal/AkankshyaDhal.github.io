@@ -1,0 +1,402 @@
+@import 'utilities.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:F2F2F2;
+    --secondary:#070606;
+
+}
+body{
+    font-family:'poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    --wekit-font-smoothing: antialiased;
+}
+header{
+ 
+    background-color:var(--dark);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+.container{
+    max-width: 1152px;
+    padding:0 15px;
+    margin: 0 auto;
+}
+
+@media(min-width: 576px){
+    .container{
+        max-width: 540px;;
+    }
+}
+
+
+@media(min-width: 763px){
+    .container{
+        max-width: 720px;;
+    }
+}
+
+@media(min-width: 992px){
+    .container{
+        max-width: 960px;;
+    }
+}
+
+@media(min-width: 1200px){
+    .container{
+        max-width: 1152px;;
+    }
+}
+
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    transition:all .3s ease;
+}
+header nav .left a:hover{
+  color:var(--primary);
+}
+header nav {
+    padding:2rem 0;
+}
+header nav .name{
+    margin-right: 3rem;
+    font-style: italic;
+}
+.pinky{
+    padding:3rem 0;
+}
+.pinky .left img{
+    width:400px;
+}
+.pinky .right{
+    color:var(--pure);
+}
+.pinky .right h6{
+   font-size:1.6rem;
+   color:var(--primary);
+   margin-bottom:0.5rem;
+
+}
+
+.pinky .right h1{
+    font-size:4rem;
+    font-weight:100;
+    line-height: 1.2;
+    margin-bottom:2rem;
+}
+.pinky .right h1 span{
+    color:var(--primary);
+}
+.pinky .right p{
+    line-height:1.9;
+    margin-bottom:2rem;
+
+}
+section{
+    padding:6rem 0;
+}
+section.about .about-me-img{
+    padding:1rem;
+    height:350px;
+}
+
+section.about h1{
+    margin-bottom:1rem ;
+    font-size:1.6rem;
+    font-weight:400;
+
+}
+
+section.about h1 span{
+    color:var(--primary);
+}
+
+section.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight:400;
+}
+section.about p{
+    font-family:'Lato',sans-serif;
+      color:var(--ternary);
+      line-height: 1.9;
+     
+}
+
+.resume-heading{
+
+    color:var(--dark);
+    text-align:center;
+    margin-bottom:1rem;
+    line-height:0.5;
+}
+
+.resume-heading + p{
+    color:var(--dark);
+    font-family:'Lato',sans-serif;
+    margin-bottom:6rem;
+    text-align:center;
+}
+.resume-heading +p span{
+    color:blue;
+    
+}
+
+section.resume{
+    background:powderblue;
+}
+section.resume .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-column-gap:2rem;
+}
+section.resume .card-wrapper .card{
+    background: var(--pure);
+    padding:3rem 2rem;
+    text-align:center;
+    padding-top: 2rem;
+    transition:all .3s ease;
+}
+
+section.resume .card-wrapper .card h1{
+    font-weight:bold;
+    font-size: 1.2rem;
+    margin-bottom:0.5rem;
+}
+section.resume .card-wrapper .card p{
+    font-family: 'Lato',sans-serif;
+    
+    line-height:1.6;
+}
+
+section.resume .card-wrapper .card:hover{
+    background: var(--dark);
+}
+section.resume .card-wrapper .card:hover h1,section.resume .card-wrapper .card:hover p{
+    color:var(--pure);
+}
+
+
+
+
+section.contact .social{
+ display:flex;
+ text-align:center;
+ margin-left: 29rem;
+ padding:0.5rem;
+
+
+}
+
+ section.contact .social a{
+    background:var(--dark);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition:all .3s ease;
+  
+  }
+  
+  section.contact .social a:hover{
+    background:var(--primary);
+}
+  section.contact .social a img{
+      height:60px;
+      width: 70px;
+      padding:0.5rem;
+  }
+  
+  
+  
+
+.contact-heading{
+
+    color:var(--dark);
+    text-align:center;
+    margin-bottom:1rem;
+    line-height:0.5;
+}
+section.contact p{
+    font-family:'Lato',sans-serif;
+
+      line-height: 1.9;
+      text-align: center;
+     
+}
+
+
+
+
+
+
+
+footer {
+    padding: 10px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.site-main-wrapper{
+    position:relative;
+
+}
+
+
+
+
+.hamberger{
+    position:absolute;
+    top:40px;
+    right:40px;
+    z-index: 11;
+    background:none;
+    border:none;
+    cursor:pointer;
+    display:none;
+}
+.hamberger img{
+    width:30px;
+}
+.mobile-nav{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1001;
+    background:#3DCFD3;
+    width:100%;
+    height:100%;
+    padding:2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+.open{
+    transform: translateX(0);
+}
+.times{
+    position:fixed;
+    top:30px;
+    right:30px;
+    border:none;
+    background:none;
+    outline:none;
+    cursor: pointer;
+}
+.times img{
+    width:20px;
+}
+.mobile-nav ul{
+    list-style-type: none;
+}
+.mobile-nav ul li a{
+    color:var(--secondary);
+    text-decoration:none;
+    font-size:2rem;
+
+}
+@media(max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    .hamberger{
+        display:block;
+    }
+    .pinky .left img{
+        width: 260px;
+       
+    }
+  
+    .pinky .right h1{
+        font-size: 3rem;
+    }
+   .pinky{
+       padding-top:10rem;
+   }
+   header{
+       clip-path:polygon(0 0,100% 0,100% 100%,27% 91%,0 100%);
+   }
+   section.about .about-me-img{
+
+    height:290px;
+}
+section.resume .card-wrapper{
+    padding:2rem 1rem;
+    grid-row-gap:2rem;
+    grid-template-columns: repeat(1, 1fr);
+  
+}
+
+section.contact .social{
+    text-align:center;
+    margin-left:16rem;
+   }
+}
+
+
+
+
+@media(max-width:576px){
+    .pinky{
+        flex-direction:column;
+    }
+    header{
+      clip-path:polygon(0 0,100% 0,100% 100%,69% 95%,0 100%);
+  }
+  .pinky .left img{
+      width: 350px;
+  }
+  .pinky .right{
+   position:absolute;
+   top:400px;
+   padding: 0 2rem;
+   background:linear-gradient(0,0,0,0,), rgba(0,0,0,0.9);
+  }
+  .pinky .left{
+      margin-top:2rem;
+      margin-right: -12rem;
+      padding-bottom: 5rem;
+  }
+  .about-inner-wrap{
+      flex-direction: column;
+  }
+  .about .right{
+      text-align: center;
+      margin-top: 1rem;
+  }
+  section{
+      padding:4rem 0;
+  }
+  section.resume .card-wrapper{
+      padding:2rem 1rem;
+      grid-row-gap:2rem;
+      grid-template-columns: repeat(1, 1fr);
+    
+  }
+  section.contact .social{
+      text-align:center;
+      margin-left:6rem;
+     }
+   
+
+  }
