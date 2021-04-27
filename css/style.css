@@ -218,10 +218,7 @@ section.contact .social{
     transition:all .3s ease;
   
   }
-  
-  section.contact .social a:hover{
-    background:var(--primary);
-}
+
   section.contact .social a img{
       height:60px;
       width: 70px;
